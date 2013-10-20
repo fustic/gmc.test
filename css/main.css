@@ -1,22 +1,40 @@
+nav {display: inline-block}
+.hidden {display: none;}
+.menu ul{list-style: none; background-color: #fff; width: auto; display: inline-table;position: absolute;z-index: 999;padding: 0px;margin: 0px}
+.menu ul li {padding: 5px 40px;}
+.menu ul li:hover {background-color: #eee;}
 
+.arrow_box {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.25)
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
 
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    left: 30px;
+    margin-left: -10px;
 
+}
+.arrow_box:before {
+    border-color: rgba(153, 153, 153, 0);
+    border-bottom-color: #aaa;
+    border-width: 11px;
+    left: 30px;
+    margin-left: -11px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
